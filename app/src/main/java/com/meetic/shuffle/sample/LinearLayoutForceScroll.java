@@ -16,22 +16,22 @@ import android.widget.RelativeLayout;
  * Created by neil.warner on 4/28/17.
  */
 
-public class RelativeLayoutForceScroll extends LinearLayout {
+public class LinearLayoutForceScroll extends LinearLayout {
     private int mTouchSlop;
     private boolean mIsScrolling;
 
-    public RelativeLayoutForceScroll(Context context) {
+    public LinearLayoutForceScroll(Context context) {
         super(context);
         initialize(context);
     }
 
-    public RelativeLayoutForceScroll(Context context, AttributeSet attrs) {
+    public LinearLayoutForceScroll(Context context, AttributeSet attrs) {
         super(context, attrs);
         initialize(context);
 
     }
 
-    public RelativeLayoutForceScroll(Context context, AttributeSet attrs, int defStyleAttr) {
+    public LinearLayoutForceScroll(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initialize(context);
     }

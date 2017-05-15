@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.meetic.shuffle.sample.LockableScrollView
+<com.meetic.shuffle.sample.LockableScrollView android:id="@+id/dashboard_scrollview"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/dashboard_scrollview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="fill_vertical"
     android:animateLayoutChanges="true"
     android:fillViewport="true"
-    android:paddingBottom="?attr/actionBarSize"
-    >
+    android:paddingBottom="?attr/actionBarSize">
 
-    <com.meetic.shuffle.sample.RelativeLayoutForceScroll
+    <com.meetic.shuffle.sample.LinearLayoutForceScroll
         android:id="@+id/outer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,36 +19,32 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:src="@drawable/bal_ic_archive_50dp"
-            android:layout_height="222dp" />
+            android:layout_height="222dp"
+            android:src="@drawable/bal_ic_archive_50dp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:src="@drawable/bal_ic_archive_50dp"
-            android:layout_height="220dp" />
+            android:layout_height="220dp"
+            android:src="@drawable/bal_ic_archive_50dp" />
 
-
-
-    <com.meetic.shuffle.Shuffle
-        android:id="@+id/shuffle"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_centerVertical="true"
-        app:shuffle_colorLeft="@color/colorLeft"
-        app:shuffle_colorRight="@color/colorRight"
-        app:shuffle_inlineMove="true"
-        app:shuffle_layoutLeft="@layout/cell_left"
-        app:shuffle_layoutRight="@layout/cell_right"
-        app:shuffle_rotation="0"
-        app:shuffle_velocityMin="500"
-        app:shuffle_infinite="true"
-        />
+        <com.meetic.shuffle.Shuffle
+            android:id="@+id/shuffle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            app:shuffle_colorLeft="@color/colorLeft"
+            app:shuffle_colorRight="@color/colorRight"
+            app:shuffle_infinite="true"
+            app:shuffle_inlineMove="true"
+            app:shuffle_layoutLeft="@layout/cell_left"
+            app:shuffle_layoutRight="@layout/cell_right"
+            app:shuffle_rotation="0"
+            app:shuffle_velocityMin="500" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:src="@drawable/bal_ic_archive_50dp"
-            android:layout_height="222dp" />
+            android:layout_height="222dp"
+            android:src="@drawable/bal_ic_archive_50dp" />
 
-
-        </com.meetic.shuffle.sample.RelativeLayoutForceScroll>
-    </com.meetic.shuffle.sample.LockableScrollView>
+    </com.meetic.shuffle.sample.LinearLayoutForceScroll>
+</com.meetic.shuffle.sample.LockableScrollView>
