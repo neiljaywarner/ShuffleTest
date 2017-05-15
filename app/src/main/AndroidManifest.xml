@@ -13,14 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".HorizontalActivity">
+
+            </activity>
+        <activity android:name=".HorizontalInlineActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-        <activity android:name=".HorizontalActivity"/>
-        <activity android:name=".HorizontalInlineActivity"/>
+            </activity>
         <activity android:name=".HorizontalInlineBehindActivity"/>
         <activity android:name=".HorizontalInlineWithoutRotationActivity"/>
         <activity android:name=".VerticalActivity"/>
